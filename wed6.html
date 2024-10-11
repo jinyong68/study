@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+<form>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <label for="u_id"> 아이디 6자리 이상 <input type="text" autofocus value="s" id="u_id" required></label>
+        <label for="u_pw"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀 번호 8자 이상<input type="text" readonly id="u_id"></label>
+        <br><br><label for="u_email">이메일<input type="email" placeholder="@dgsw.hs.kr" id="u_email"></label>
+    </fieldset>
+    <fieldset>
+        <legend>상품 선택</legend>
+        <p>주문할 상품을 선택해 주세요</p>
+        <label><input type="checkbox" checked value="h3">가정용 3kg <input type="range" min="0" max="5" step="2" value="5"></label><br>
+        <label><input type="checkbox" value="h5">가정용 5kg <input type="number"min="0" max="5"></label><br>
+        <label><input type="checkbox" value="g3">선물용 3kg <input type="range"min="0" max="9999999999"></label><br>
+        <label><input type="checkbox" value="g5">선물용 5kg <input type="number"min="0" max="5"></label><br>
+        <p>포장 선택</p>
+        <label><input type="radio" name="gift" value="y">포장</label>
+        <label><input type="radio" name="gift" value="n">포장 안함</label>
+        <p>배송일</p>
+        <label><input type="datetime-local"></label>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+    <input type="button" value="유의사항" onclick="window.open('wed0312.html')">
+    <input type="image" src="images/Xv8f6b_TppYglIPXGQmCkzsfLh0zYm0rIIAUY4szYthHQeUxMlA6p0sb87NVQ3G-rFkiPcYrEPgLm2w9PDjtsA.webp" width="1" height="1"  onclick="window.open('wed0312.html')">
+    <button type="submit">제출 완료</button>
+    <input type="file">
+    
+    
+    <label for="u_memo">메모</label><br>
+    <textarea id="memo" cols="100" rows="30"></textarea>
+    
+    <select name="" id="" multiple size="2">
+        <option value="p00">일시불</option>
+        <option value="p03">3개월 할부</option>
+        <option value="p06">6개월 할부</option>
+        <option value="p12">12개월 할부</option>
+        <option value="p24">24개월 할부</option>
+        <option value="p36"selected>36개월 할부</option>
+    </select>
+    
+    <input type="text" list="d_list">
+    <datalist name="" id="d_list" multiple size="2">
+        <option value="p00">일시불</option>
+        <option value="p03">3개월 할부</option>
+        <option value="p06">6개월 할부</option>
+        <option value="p12">12개월 할부</option>
+        <option value="p24">24개월 할부</option>
+        <option value="p36"selected>36개월 할부</option>
+    </datalist>
+
+</form>
+</body>
+</html>

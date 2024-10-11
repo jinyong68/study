@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var pro = prompt("너 언제 태어났어");
+        // document.write("2024년 현재<br>당신의 나이는 ",2024-pro+1,"입니다.")
+        // document.write(3!=3,"<br>")
+        // document.write(3!="3","<br>")
+        // document.write(3!=="3","<br>")
+        // document.write(3!==3,"<br>")
+        // let sc = prompt("점수를 입력해");
+        // if (60<=sc){
+        //     document.write("합격");
+        // }
+        // else{
+        //     document.write("불합격");
+        // }
+        // const psc = prompt("프밍 점수를 입력해")
+        // const web = prompt("웹기 점수를 입력해")
+        // let asd = psc/2+web/2
+        // document.write(asd)
+        // if(60<=asd && 40<=psc && 40<=web){
+        //     document.write("합격")
+        // }
+        // else{
+        //     document.write("불합격")
+        // }
+        // let song = prompt("1. 내 손을 잡아 2. 체다 게임 3.아픈건 딱 질색이나까  이중에 한 골라")
+        // switch(song){
+        //     case "1":document.write("내 손을 잡아");
+        //         break;
+        //     case "2":document.write("체다 게임");
+        //         break;
+        //     case "3":document.write("아픈 건 딱 질색이니까");
+        //         break;
+        //     default: document.write("아무거나");
+        //         break;
+        // }
+        // for (let i=2; i<10; i++){
+        //     for (let j=1; j<10; j++){
+        //         document.write(i,"*",j,"=",i*j,"<br>")
+        //     }
+        //     document.write("<br>")
+        // }
+        let mynum = 3485925814; 
+        var ipnum = prompt("숫자를 입력해");
+        while(mynum!=ipnum){
+            if (mynum > ipnum){
+                alert("up");
+                ipnum = prompt("숫자를 입력해");
+            }
+            else if (mynum < ipnum){
+                alert("down");
+                ipnum = prompt("숫자를 입력해");
+            }
+        }
+
+
+    </script>
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+</html>

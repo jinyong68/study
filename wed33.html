@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            position: relative;
+            width: 500px;
+            margin: auto;
+        }
+        .open{
+            position: absolute;
+            left: 6px;
+            bottom: 10px;
+        }
+        #info{
+            display: none;
+        }
+        button{
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="wrap">
+        <img src="./images/flower.jpg" >
+        <button class="open" id="viewbut" onclick="view()">상세 설명 보기</button>
+        <div id="info">
+            <h4>등심 붓꽃</h4>
+            <p>북아메리카 원산으로...(하략)</p>
+            <button onclick="hide()">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script>
+        function view() {
+            document.querySelector("#info").style.display="block";
+            document.querySelector("#viewbut").style.display="none";
+        }
+        function hide() {
+            document.querySelector("#info").style.display="none";
+            document.querySelector("#viewbut").style.display="block";
+        }
+    </script> -->
+    <div id="wrap">
+        <img src="./images/flower.jpg" >
+        <button class="open" id="viewbut">상세 설명 보기</button>
+        <div id="info">
+            <h4>등심 붓꽃</h4>
+            <p>북아메리카 원산으로...(하략)</p>
+            <button id="close">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script>
+        let a = document.querySelector("#viewbut");
+        a.onclick = view;
+        let b = document.querySelector("#close");
+        b.onclick = hide;
+        function view() {
+            document.querySelector("#info").style.display="block";
+            document.querySelector("#viewbut").style.display="none";
+        }
+        function hide() {
+            document.querySelector("#info").style.display="none";
+            document.querySelector("#viewbut").style.display="block";
+        }
+    </script>
+</body>
+</html>

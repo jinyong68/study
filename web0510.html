@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid_l{
+            display: grid;
+            width: auto;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-template-rows: minmax(300px,auto);
+            grid-gap: 10px;
+        }
+        .box{
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        p{
+            text-align: left;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">상품 안내</h1>
+    <div id="grid_l">
+        <div class="box"><h3>상품1</h3><img src="images/cup-1.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품2</h3><img src="images/cup-2.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품3</h3><img src="images/cup-3.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품4</h3><img src="images/cup-4.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품5</h3><img src="images/cup-5.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품6</h3><img src="images/cup-6.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품7</h3><img src="images/cup-7.jpg" alt=""><p>상품 설명</p></div>
+        <div class="box"><h3>상품8</h3><img src="images/cup-8.jpg" alt=""><p>상품 설명</p></div>
+    </div>
+    <script src="textcolor.js"></script>
+    <script>
+        // alert("상품 주문 페이지 입니다");
+        // var re = confirm("해당 상품을 주문하시겠습니까?");
+        // var pro = prompt("몇 개 살 꺼야","예) 100000000개");
+        // document.write("<h1><b>"+re,pro+"</b>으로 결정하면 내가 좋아</h1>");
+        // console.log(name);
+        // var num = 100;
+        // console.log(num>10);
+        // var season = ["봄","여름","가을","겨울"]
+        // document.write(season[10])
+        // var heading = document.querySelector('#heading');
+        // heading.onclick = function () {
+        // heading.style.color = "red";
+        // }
+        var count = 2;
+        document.write(count++,"<br>");
+        document.write(count);
+
+
+    </script>
+</body>
+</html>

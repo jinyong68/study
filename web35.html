@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #info{
+            border: 1px solid black;
+            border-radius: 100%;
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h1>책 읽기</h1>
+        <p id="day">일 연속으로 <br>
+            책 읽기를 달성했군요<br><br>
+            축하합니다!
+        </p>
+    </div>
+    <script>
+        let now = new Date();
+        let firstday = new Date(prompt());
+
+        let toNow = now.getTime();
+        let toFirst = firstday.getTime();
+        let passedTime = toNow - toFirst;
+        passedTime = Math.round(passedTime/3600000/24)
+        document.querySelector("#day").innerHTML = passedTime + "일 연속으로 <br>책 읽기를 달성했군요<br><br>축하합니다!"
+
+    </script>
+</body>
+</html>

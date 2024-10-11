@@ -1,0 +1,54 @@
+#container{
+    height: 200px;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+#container>div{
+    width:100px;
+    height:100px;
+    margin: 20px;
+    border: 1px solid black;
+	background-color:orange;
+}
+.box1:hover{
+    transform: rotate(45deg);
+}
+.box2:hover{
+   transform: rotateY(90deg);
+}
+.box3:hover{
+    transform: translateX(110px);
+}
+#ex div{
+    float:initial;
+    width: 0;
+    height:50px;
+    margin:10px;
+    color:white;
+    background-color:#80c8ffc3;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;	
+}
+#ex:hover div{
+    width:800px;
+  }
+.ease{
+    transition: 2s ease-out;
+  }
+.linear{
+    transition: 2s  linear;
+  }
+.ease-in{
+    transition: 2s ease-in;
+}
+.ease-out{
+    transition:2s  ease;
+}
+.ease-in-out{
+    transition: 2s ease-in-out;
+}
+.a{
+    transition: 2s ease-in;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:beige ;
+            background-size: cover;
+        }
+        #grid_l {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 각 그리드 아이템을 최소 300px로 설정하고, 가능한 만큼 채우기 */
+            gap: 10px;
+        }
+        p {
+            text-align: center;
+            margin-left: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: contents; /* ul 자체는 그리드에 영향을 미치지 않도록 함 */
+        }
+        li {
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .box {
+            background-color: rgb(0,0,0,0.6);
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            padding-top: 10px;
+            position: absolute;
+            top: 200px;
+            opacity: 0;
+        }
+        li:hover .box {
+            opacity: 1;
+            transform: translateY(-200px);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">구지 음식점 추천</h1>
+    <div id="grid_l">
+        <ul>
+            <li>
+                <img src="images/대성반점.png" alt="">
+                <div class="box">
+                    <h3>대성반점</h3>
+                    <p>구지면 창리 429-9</p>
+                    <p>맜있음(나는 안 가봄)</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/홍유.png" alt="">
+                <div class="box">
+                    <h3>홍유</h3>
+                    <p>구지면 응암리 1193</p>
+                    <p>맜있음(나는 안 가봄)</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/오짬떙.png" alt="">
+                <div class="box">
+                    <h3>오늘은짬뽕땡기는날</h3>
+                    <p>구지면 응암리 1209</p>
+                    <p>차돌짬뽕이 제일 맛있음</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/대동육지도.png" alt="">
+                <div class="box">
+                    <h3>대동육지도</h3>
+                    <p>구지면 응암리 177</p>
+                    <p>비싸지만 고기는 맛있음</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/달성면옥.jpg" alt="">
+                <div class="box">
+                    <h3>달성면옥</h3>
+                    <p>현풍면 삼강길 40</p>
+                    <p>여름에 가서 한 사바리 하는게 맛도리임</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/프랭크버거.jpg" alt="">
+                <div class="box">
+                    <h3>프랭크 버거</h3>
+                    <p>구지면 과학마을로 50</p>
+                    <p>그냥 햄버거 집임</p>
+                </div>
+            </li>
+            <!-- <li>
+                <img src="images/cup-7.jpg" alt="">
+                <div class="box">
+                    <h3>상품7</h3>
+                    <p>상품 설명</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/cup-8.jpg" alt="">
+                <div class="box">
+                    <h3>상품8</h3>
+                    <p>상품 설명</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+</body>
+</html>

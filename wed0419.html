@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        #container{
+            width: 1200px;
+            margin: 20px auto;
+        }
+        #header{
+            width: 100%;
+            height: 200px;
+            border: 1px dotted black;
+        }
+        #sidebar{
+            width: 30%;
+            height: 600px;
+            float: left;
+            border: 1px dotted black;
+        }
+        #contents{
+            width: 70%;
+            height: 600px;
+            float: left;
+            border: 1px dotted black;
+        }
+        #footer{
+            width: 100%;
+            height: 100px;
+            clear: left;
+            border: 1px dotted black;
+        }
+        .search{
+            width: 500px;
+            height: 50px;
+            border: none;
+            border-radius: 30px;
+            margin: 20px auto;
+            position: relative;
+        }
+        input{
+            width: 500px;
+            height: 50px;
+            border: 3px solid rgb(55,192,55);
+            border-radius: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        #logo{
+            color: rgb(55,192,55);
+            font-weight: 900;
+            font-size: 35px;
+            position: absolute;
+            margin: 7px 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 20px;
+            margin: 0 20px;
+            text-align: center;
+        }
+        nav ul{
+            padding-left: 350px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        </style>
+</head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <div class="search" >
+                    <span id="logo">N</span>
+                    <input type="search" placeholder="검색어를 입력하세요.">
+                </div>
+                <nav>
+                    <ul>
+                        <li><img src="images/gmail.png"><br><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F" target="_blank">메일</a></li>
+                        <li><img src="images/coffee-shop.png"><br><a href="https://section.cafe.naver.com/ca-fe/home" target="_blank">카페</a></li>
+                        <li><img src="images/blogging.png"><br><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">블로그</a></li>
+                        <li><img src="images/shopping-cart.png"><br><a href="https://shopping.naver.com/home" target="_blank">쇼핑</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <aside id="sidebar">
+                <p>sidebar</p>
+            </aside>
+            
+            <main id="contents">
+                <p>content</p>
+            </main>
+
+            <footer id="footer">
+                <p>footer</p>
+            <footer>
+        </div>
+    </body>
+</html>

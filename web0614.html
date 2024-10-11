@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/flower.jpg" id="cover"><br>
+    <button onclick="javascript:window.close()">닫기</button>
+    <script>
+        let cover = document.getElementById("cover");
+        cover.addEventListener("mouseover",function(){
+            cover.src ="images/healing.jpg";
+        })
+        cover.addEventListener("dblclick",function(){
+            cover.src ="images/flower.jpg";
+        })
+
+    </script>
+</body>
+</html>

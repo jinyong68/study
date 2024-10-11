@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 600px;
+            height: 300px;
+            border: 1px solid #acf;
+            margin-bottom: 10px;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #bcc;
+            margin-bottom: 10px;
+        }
+        .grd1{
+            background: linear-gradient(to left, blue, white);
+        }
+        .grd2{
+            background: linear-gradient(45deg ,#51a8f9 5%,blue 40%,seashell 50%,red 60%,pink);
+        }
+        .grd3{
+            background: radial-gradient(circle closest-side at 200px 100px,red 20%,orange 65%,white,black);
+        }
+        .grd4{
+            background: radial-gradient(circle closest-corner at 200px 100px,red 20%,orange 65%,white,black);
+        }
+        .grd5{
+            background: radial-gradient(circle farthest-corner at 200px 100px,red 20%,orange 65%,white,black);
+        }
+        .grd6{
+            background: radial-gradient(circle farthest-side at 200px 100px,red 20%,orange 65%,white,black);
+        }
+        .grd7{
+            background: radial-gradient(circle farthest-side at 100px 100px,white,#677);
+            border-radius: 100%;
+        }
+        .grd8{
+            background: linear-gradient(white,white 30px,red 30px,red 60px,blue 60px);
+        }
+        .grd9{
+            background: repeating-linear-gradient(white,white 30px,red 30px,red 60px,blue 60px);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box1 grd1"></div>
+    <div class="box1 grd2"></div>
+    <div class="box1 grd3"></div>
+    <div class="box1 grd4"></div>
+    <div class="box1 grd5"></div>
+    <div class="box1 grd6"></div>
+    <div class="box2 grd7"></div>
+    <div class="box1 grd8"></div>
+    <div class="box1 grd9"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 60px auto;      
+      animation: color 3s infinite, move 3s infinite;
+
+    }
+    @keyframes color{
+        from{
+            background-color: yellow;
+        }
+        50%{
+            background-color: pink;
+        }
+        to{
+            background-color: seashell;
+        }
+    }
+    @keyframes move{
+      from{
+            transform: perspective(120px) rotate3d(0deg);
+        }
+        50%{
+            transform: perspective(120px) rotateY(-180deg);    
+        }
+        to{
+            transform: perspective(120px) rotateZ(180deg);  
+        }
+    }
+  </style>
+</head>
+
+<body>
+	<div class="box">	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link,a:visited{
+            text-decoration: none;
+            color: black;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            width: 150px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+        }
+        #bgcolor{
+            width: 450px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 1px auto;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="changebg('Green'),alert('안녕하세요')">green</a></li>
+        <li><a href="#" onclick="changebg('Orange')">orange</a></li>
+        <li><a href="#" onclick="changebg('Pink')">pink</a></li>
+        <li><a href="#" onclick="changebg('Red')">red</a></li>
+        <li><a href="#" onclick="changebg('Blue')">blue</a></li>
+        <li><a href="#" onclick="alert('안녕하세요')">안녕</a></li>
+    </ul>
+    <div id="bgcolor">
+
+    </div>
+    <script>
+        function changebg(color){
+            var result = document.querySelector('#bgcolor');
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
